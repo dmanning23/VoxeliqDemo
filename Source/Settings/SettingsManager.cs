@@ -6,9 +6,11 @@
  */
 
 using System;
-using Engine.Common.Helpers.IO;
-using Engine.Common.Logging;
+using Voxeliq.Engine.Common.Helpers.IO;
+using Voxeliq.Engine.Common.Logging;
 using Nini.Config;
+using Voxeliq.Engine.Common.Helpers.IO;
+using Voxeliq.Engine.Common.Logging;
 
 namespace Client.Settings
 {
@@ -40,8 +42,8 @@ namespace Client.Settings
                 Parser.Alias.AddAlias("Off", false);
 
                 // logger level aliases.
-                Parser.Alias.AddAlias("MinimumLevel", Logger.Level.Trace);
-                Parser.Alias.AddAlias("MaximumLevel", Logger.Level.Trace);
+                Parser.Alias.AddAlias("MinimumLevel", SettingsManager.Logger.Level.Trace);
+                Parser.Alias.AddAlias("MaximumLevel", SettingsManager.Logger.Level.Trace);
             }
 
             Parser.ExpandKeyValues();

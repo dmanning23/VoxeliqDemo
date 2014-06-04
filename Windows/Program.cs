@@ -10,11 +10,11 @@ using System.Globalization;
 using System.Reflection;
 using System.Threading;
 using Client.Settings.Readers;
-using Engine.Common.Logging;
-using Engine.Platforms;
-using Engine.Universe;
+using Voxeliq.Engine.Common.Logging;
+using Voxeliq.Engine.Platforms;
+using Voxeliq.Engine.Universe;
 
-namespace Client
+namespace VoxeliqDemo
 {
     public static class Program
     {

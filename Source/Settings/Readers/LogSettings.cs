@@ -5,7 +5,7 @@
  * it under the terms of the Microsoft Public License (Ms-PL).
  */
 
-using Engine.Common.Logging;
+using Voxeliq.Engine.Common.Logging;
 
 namespace Client.Settings.Readers
 {

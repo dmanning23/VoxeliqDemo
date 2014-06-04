@@ -6,15 +6,15 @@
  */
 
 using Client.Settings.Readers;
-using Engine.Common.Logging;
-using Engine.Core.Config;
-using Engine.Debugging.Timing;
-using Engine.Graphics;
-using Engine.Graphics.Effects.PostProcessing.Bloom;
-using Engine.Platforms;
+using Voxeliq.Engine.Common.Logging;
+using Voxeliq.Engine.Core.Config;
+using Voxeliq.Engine.Debugging.Timing;
+using Voxeliq.Engine.Graphics;
+using Voxeliq.Engine.Graphics.Effects.PostProcessing.Bloom;
+using Voxeliq.Engine.Platforms;
 using Microsoft.Xna.Framework;
 
-namespace Client
+namespace VoxeliqDemo
 {
     /// <summary>
     /// The game client.
