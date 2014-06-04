@@ -3,16 +3,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{D160C2E6-6B05-4E89-96DC-74A4E1ABC48B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>VoxeliqDemo.Windows</RootNamespace>
     <AssemblyName>VoxeliqDemo.Windows</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -24,6 +22,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -34,9 +33,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\Source\GameClient.cs">
@@ -72,6 +77,122 @@
     <Content Include="SDL.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\MiiCompleteMap_0.xnb">
+      <Link>Content\MiiCompleteMap_0.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\SkyDomeTexture_0.xnb">
+      <Link>Content\SkyDomeTexture_0.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Textures\AimedBlock.xnb">
+      <Link>Content\Textures\AimedBlock.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Textures\cloud-texture.xnb">
+      <Link>Content\Textures\cloud-texture.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Textures\cloudmap.xnb">
+      <Link>Content\Textures\cloudmap.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Textures\cracks.xnb">
+      <Link>Content\Textures\cracks.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Textures\roundedCorner.xnb">
+      <Link>Content\Textures\roundedCorner.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Textures\starmap.xnb">
+      <Link>Content\Textures\starmap.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Textures\terrain.xnb">
+      <Link>Content\Textures\terrain.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Textures\Crosshairs\Normal.xnb">
+      <Link>Content\Textures\Crosshairs\Normal.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Textures\Crosshairs\Shovel.xnb">
+      <Link>Content\Textures\Crosshairs\Shovel.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Models\AimedBlock.xnb">
+      <Link>Content\Models\AimedBlock.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Models\Mii.xnb">
+      <Link>Content\Models\Mii.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Models\SkyDome.xnb">
+      <Link>Content\Models\SkyDome.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Fonts\calibri.xnb">
+      <Link>Content\Fonts\calibri.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Fonts\CalibriDebug.xnb">
+      <Link>Content\Fonts\CalibriDebug.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Fonts\calibrismall.xnb">
+      <Link>Content\Fonts\calibrismall.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Fonts\Verdana.xnb">
+      <Link>Content\Fonts\Verdana.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Effects\BlockEffect.xnb">
+      <Link>Content\Effects\BlockEffect.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Effects\DualTextured.xnb">
+      <Link>Content\Effects\DualTextured.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Effects\PerlinNoise.xnb">
+      <Link>Content\Effects\PerlinNoise.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Effects\SkyDome.xnb">
+      <Link>Content\Effects\SkyDome.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Effects\PostProcessing\Bloom\BloomCombine.xnb">
+      <Link>Content\Effects\PostProcessing\Bloom\BloomCombine.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Effects\PostProcessing\Bloom\BloomExtract.xnb">
+      <Link>Content\Effects\PostProcessing\Bloom\BloomExtract.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Effects\PostProcessing\Bloom\GaussianBlur.xnb">
+      <Link>Content\Effects\PostProcessing\Bloom\GaussianBlur.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Audio\Music\funandrun.wma">
+      <Link>Content\Audio\Music\funandrun.wma</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Audio\Music\funandrun.xnb">
+      <Link>Content\Audio\Music\funandrun.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Audio\Music\Ambient\forestAmbient.xnb">
+      <Link>Content\Audio\Music\Ambient\forestAmbient.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\voxeliq\Windows.Xna\voxeliq.Windows.Xna\voxeliq.Windows.Xna\bin\x86\Debug\Content\Audio\Music\Ambient\frogsAmbient.xnb">
+      <Link>Content\Audio\Music\Ambient\frogsAmbient.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\" />
@@ -84,7 +205,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\externals\voxeliq\Windows\Voxeliq.Windows.csproj">
-      <Project>{f3d9bf6d-a44c-4aee-8fa5-0389700d410a}</Project>
+      <Project>{F3D9BF6D-A44C-4AEE-8FA5-0389700D410A}</Project>
       <Name>Voxeliq.Windows</Name>
     </ProjectReference>
   </ItemGroup>
