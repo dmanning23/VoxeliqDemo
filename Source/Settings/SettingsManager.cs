@@ -16,7 +16,7 @@ namespace Client.Settings
 {
     public sealed class SettingsManager
     {
-        private static readonly Logger Logger = LogManager.CreateLogger();
+		private static readonly Logger Logger = LogManager.CreateLogger();
         private static readonly IniConfigSource Parser; // the ini parser.
         private static readonly string ConfigFile;
         private static bool _fileExists = false; // does the ini file exists?
@@ -42,8 +42,8 @@ namespace Client.Settings
                 Parser.Alias.AddAlias("Off", false);
 
                 // logger level aliases.
-                Parser.Alias.AddAlias("MinimumLevel", SettingsManager.Logger.Level.Trace);
-                Parser.Alias.AddAlias("MaximumLevel", SettingsManager.Logger.Level.Trace);
+                Parser.Alias.AddAlias("MinimumLevel", Logger.Level.Trace);
+                Parser.Alias.AddAlias("MaximumLevel", Logger.Level.Trace);
             }
 
             Parser.ExpandKeyValues();

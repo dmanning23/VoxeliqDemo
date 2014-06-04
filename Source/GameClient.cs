@@ -7,6 +7,7 @@
 
 using Client.Settings.Readers;
 using Voxeliq.Engine.Common.Logging;
+using Voxeliq.Engine.Core;
 using Voxeliq.Engine.Core.Config;
 using Voxeliq.Engine.Debugging.Timing;
 using Voxeliq.Engine.Graphics;
@@ -105,7 +106,7 @@ namespace VoxeliqDemo
                 }
             };
 
-            var engine = new Engine.Core.Engine(this, config);
+            var engine = new Engine(this, config);
             this.ScreenManager = new GraphicsManager(this._graphicsDeviceManager, this); // start the screen manager.
 
             engine.EngineStart += OnEngineStart;
@@ -159,7 +160,7 @@ namespace VoxeliqDemo
 			var skyColor = new Color(128, 173, 254);
             this.GraphicsDevice.Clear(skyColor);
 
-            this.GraphicsDevice.RasterizerState = Engine.Core.Engine.Instance.Rasterizer.State;
+            this.GraphicsDevice.RasterizerState = Engine.Instance.Rasterizer.State;
 
             base.Draw(gameTime);
 
